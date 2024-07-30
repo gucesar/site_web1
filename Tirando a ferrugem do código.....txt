@@ -1,0 +1,45 @@
+Tirando a ferrugem do código....
+
+O objetivo da atividade é retomar o processo de desenvolvimento de páginas de internet com HTML / CSS e JavaScript
+
+
+Criar um site usando ao menos HTML e CSS com no mínimo 17 páginas a partir dos assuntos comentados na primeira aula.
+
+- Os sites podem ser feitos no máximo em dupla. E o conteúdo precisa ser bem elaborado, assim como os recursos visuais.
+- Obrigatório a utilização ao menos de HTML e CSS
+- São 17 páginas além do index.html
+- Os tópicos discutidos na aula inicial são apenas os pontos de partida para o desenvolvimento da temática do site.
+- Cada um dos assuntos discutidos precisa ser rico em informações, não basta apenas responder diretamente perguntas como o que é http, nesse caso por exemplo explica-se o que é o http, qual sua função, por que é utilizado, quais são suas variações por exemplo.
+- Essa dinâmica deve ser utilizada para todos os itens listados abaixo:
+
+01 - WWW
+02 - FTP
+03 - FTPS
+04 - HTTP
+05 - HTTPS
+06 - IIS
+07 - PHP
+08 - WEBSERVER
+09 - APACHE
+10 - IP
+11 - IPV4
+12 - IPV6
+13 - CSS
+14 - JAVASCRIPT
+15 - ASP
+17 - TOMCAT
+18 - JSP
+19 - ASPX
+20 - MYSQL
+21 - HTML
+22 - DNS
+23 - DOMINIO
+24 - XAMPP
+25 - REGISTRO.BR
+26 - GODADDY
+27 - FAPESP
+
+
+
+A entrega é para o final da aula do dia 07/08/2024
+

@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"FTP"</title>
+</head>
+<body>
+    <h1>
+        O que é FTP?
+    </h1>
+
+    <p>
+        FTP (File Transfer Protocol) é um protocolo de rede padrão usado para a transferência de arquivos entre um cliente e um servidor em uma 
+        rede TCP/IP, como a internet. Ele permite que arquivos sejam enviados e recebidos de forma eficiente e é amplamente utilizado para 
+        gerenciar e compartilhar arquivos.
+    </p>
+
+    <h1>
+        Para que serve?
+    </h1>
+
+    <p>
+        <h2>FTP é utilizado para:</h2>
+        <ul>
+            <li>
+                Transferência de Arquivos: Enviar ou receber arquivos entre computadores ou servidores através da internet ou de uma rede local.
+            </li>
+
+            <li>
+                Gerenciamento de Arquivos: Permite o gerenciamento de arquivos e diretórios em um servidor remoto, incluindo operações como criar,
+                 deletar e renomear arquivos e pastas.
+            </li>
+
+            <li>
+                Backup e Recuperação: Facilita a realização de backups e a recuperação de dados ao transferir arquivos entre sistemas.
+            </li>
+
+            <li>
+                EPublicação de Websites: É comum usar FTP para fazer upload de arquivos de um site para um servidor web.
+            </li>
+        </ul>
+    </p>
+
+    <h1>
+        Como funciona?
+    </h1>
+
+    <p>
+        FTP utiliza duas conexões distintas para transferir dados: uma para comandos e outra para a transferência real de arquivos.
+
+        <h2>
+            Conexão de Controle:
+        </h2>
+
+        <ul>
+            <li>
+                Porta: Normalmente utiliza a porta 21.
+            </li>
+
+            <li>
+                Função: Envia comandos e respostas entre o cliente e o servidor.
+            </li>
+        </ul>
+
+        <h2>
+            Conexão de Dados:
+        </h2>
+
+        <ul>
+            <li>
+                Porta: Utiliza uma porta separada, que pode ser a porta 20 no modo ativo ou uma porta dinâmica no modo passivo.
+            </li>
+
+            <li>
+                Função: Transferência real dos dados dos arquivos.
+            </li>
+        </ul>
+
+        <h2>
+            Modos de Conexão
+        </h2>
+        
+        <h2>
+            Modo Ativo:
+        </h2>
+
+        <ul>
+            <li>
+                O cliente se conecta ao servidor na porta 21 para enviar comandos.
+            </li>
+
+            <li>
+                O servidor então abre uma conexão de dados na porta 20 para enviar ou receber arquivos.
+            </li>
+        </ul>
+
+        <h2>
+            Modo Passivo:
+        </h2>
+
+        <ul>
+            <li>
+                O cliente se conecta ao servidor na porta 21 para enviar comandos.
+            </li>
+
+            <li>
+                O servidor abre uma porta aleatória para a transferência de dados, e o cliente se conecta a essa porta.
+            </li>
+        </ul>
+        
+    </p>
+
+    <p>
+        <h2>
+            Comandos FTP Comuns
+        </h2>
+
+        <ul>
+            <li>
+                USER e PASS: Autenticação do usuário.
+            </li>
+
+            <li>
+                LIST ou NLST: Listar arquivos e diretórios no servidor.
+            </li>
+
+            <li>
+                RETR: Baixar um arquivo do servidor.
+            </li>
+
+            <li>
+                STOR: Enviar um arquivo para o servidor.
+            </li>
+
+            <li>
+                DELE: Deletar um arquivo no servidor.
+            </li>
+
+            <li>
+                MKD e RMD: Criar e remover diretórios, respectivamente.
+            </li>
+
+            <li>
+                QUIT: Encerrar a conexão FTP.
+            </li>
+        </ul>
+    </p>
+   
+
+    <h1>
+        Como foi feito?
+    </h1>
+
+    <h2>
+        Desenvolvimento Inicial:
+    </h2>
+    
+    <ul>
+        <li>
+            O FTP foi desenvolvido na década de 1970 como um dos primeiros protocolos para a transferência de arquivos entre sistemas em rede.
+        </li>
+
+        <li>
+            A primeira especificação foi publicada em 1971, e a versão mais recente do protocolo foi formalizada em 1985.
+        </li>
+    </ul>
+
+<br>
+
+    <h2>
+        Evolução:
+    </h2>
+    
+    <ul>
+        <li>
+            O FTP foi inicialmente definido para ser simples e eficaz em redes locais. Com o crescimento da internet, 
+            as implementações do FTP foram adaptadas para lidar com maior segurança e eficiência.
+        </li>
+
+        <li>
+            Novas versões e extensões foram desenvolvidas para melhorar a funcionalidade, como FTPS (FTP Secure) e SFTP 
+            (SSH File Transfer Protocol), que adicionam segurança adicional ao processo de transferência.
+        </li>
+    </ul>
+
+<br>
+
+    <h1>
+        Variações e Extensões   
+    </h1>
+
+    <p>
+        <h2>
+            FTPS (FTP Secure):
+        </h2>
+
+        <ul>
+            <li>
+                Segurança: Adiciona uma camada de segurança usando SSL/TLS para criptografar a comunicação entre o cliente e o servidor FTP.
+            </li>
+
+            <li>
+                Portas: Utiliza as mesmas portas do FTP padrão, mas pode ser configurado para usar diferentes portas para a conexão segura.
+            </li>
+        </ul>
+    </p>
+
+    <p>
+        <h2>
+            SFTP (SSH File Transfer Protocol):
+        </h2>
+
+        <ul>
+            <li>
+                Segurança: Funciona sobre o protocolo SSH e fornece uma maneira segura de transferir arquivos.
+            </li>
+
+            <li>
+                Porta: Normalmente usa a porta 22, a mesma do SSH.
+            </li>
+        </ul>
+    </p>
+
+    <p>
+        <h2>
+            TFTP (Trivial File Transfer Protocol):
+        </h2>
+
+        <ul>
+            <li>
+                Simplicidade: Um protocolo muito mais simples que o FTP, usado para transferências básicas de arquivos.
+            </li>
+
+            <li>
+                Segurança: Não possui mecanismos de segurança integrados e opera na porta 69.
+            </li>
+        </ul>
+    </p>
+
+    <p>
+        <h2>
+            FTP over TLS/SSL (FTPS):
+        </h2>
+
+        <ul>
+            <li>
+                Simplicidade: Um protocolo muito mais simples que o FTP, usado para transferências básicas de arquivos.
+            </li>
+
+            <li>
+                Segurança: Não possui mecanismos de segurança integrados e opera na porta 69.
+            </li>
+        </ul>
+    </p>
+
+        Em Resumo:
+    </h1>
+
+    <p>
+        <ul>
+            <li>
+                WWW é a vasta rede de documentos e recursos interconectados acessíveis através da internet.
+            </li>
+            <li>
+                Funciona com a criação e visualização de páginas web usando protocolos como HTTP e tecnologias como HTML, CSS e JavaScript.
+            </li>
+            <li>
+                Foi criado por Tim Berners-Lee e evoluiu através de várias fases, com o desenvolvimento contínuo de padrões e tecnologias.
+            </li>
+        </ul>
+    </p>
+
+</body>
+</html>

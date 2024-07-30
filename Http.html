@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"HTTP/HTTPS"</title>
+</head>
+<body>
+    <h1>
+        O que é HTTP?
+    </h1>
+
+    <p>
+        HTTP é um protocolo de comunicação que permite a transferência de dados entre um cliente (geralmente um navegador web) e
+         um servidor web. Ele é a base para a comunicação de informações na World Wide Web.
+    </p>
+
+    <h1>
+        Para que serve?
+    </h1>
+
+    <p>
+        <h2>HTTP é usado para:</h2>
+        <ul>
+            <li>
+                Solicitar e receber páginas web: Quando você digita um URL no navegador e pressiona Enter, o navegador 
+                faz uma solicitação HTTP ao servidor para obter a página desejada.
+            </li>
+            <li>
+                Enviar dados para servidores: Formulários web e outros tipos de dados são enviados ao servidor usando HTTP.
+            </li>
+            <li>
+                Trocar outros tipos de informações: HTTP pode ser usado para transferir imagens, vídeos, scripts, e muito mais.
+            </li>
+        </ul>
+    </p>
+
+    <h1>
+        Como funciona?
+    </h1>
+
+    <p>
+        <h2>
+            Requisição HTTP:
+        </h2>
+        O cliente (navegador) envia uma solicitação HTTP ao servidor. Essa solicitação contém um "método" 
+        (como GET, POST, PUT, DELETE), o URL do recurso desejado, e pode incluir cabeçalhos e um corpo de mensagem.
+    </p>
+
+    <p>
+        <h2>
+            Resposta HTTP:
+        </h2>
+        O servidor processa a solicitação e envia uma resposta de volta ao cliente. A resposta inclui um código de status 
+        (como 200 OK, 404 Not Found), cabeçalhos e o corpo da resposta (como o conteúdo da página web).
+    </p>
+
+    <h1>
+        Como foi feito?
+    </h1>
+
+    <p>
+        O HTTP foi desenvolvido por Tim Berners-Lee e sua equipe no CERN (Organização Europeia para Pesquisa Nuclear) 
+        no início dos anos 1990. A primeira versão, HTTP/0.9, foi publicada em 1991 e era bastante simples. 
+        HTTP/1.0 foi introduzido em 1996, trazendo melhorias significativas.
+    </p>
+
+    <p>
+        A versão mais amplamente utilizada atualmente é HTTP/1.1, que foi publicada em 1999 e introduziu diversas otimizações, 
+        como o suporte a conexões persistentes e o uso de cabeçalhos de cache.
+    </p>
+
+    <p>
+        Recentemente, HTTP/2 foi lançado (em 2015) e trouxe melhorias adicionais, como multiplexação de requisições e compressão de cabeçalhos, 
+        para aumentar a eficiência e a performance da comunicação web.
+    </p>
+
+    <h1>
+        Segurança e HTTPS
+    </h1>
+
+    <p>
+        Para garantir a segurança dos dados durante a transferência, foi desenvolvido o HTTPS (HTTP Secure). 
+        O HTTPS utiliza criptografia TLS (Transport Layer Security) para proteger a comunicação entre o cliente e o servidor, 
+        garantindo que os dados sejam transmitidos de forma segura e que a integridade e a privacidade das informações sejam mantidas.
+    </p>
+
+    <h1>
+        Quais são suas variações?
+    </h1>
+
+    <p>
+        <h2>
+            1. HTTP/0.9
+        </h2>
+
+        <h3>
+            Lançamento: 1991
+        </h3>
+
+        <h3>
+            Características:
+        </h3>
+
+        <ul>
+            <li>
+                A primeira versão do HTTP, muito simples e rudimentar.
+            </li>
+
+            <li>
+                Suportava apenas um método: GET.
+            </li>
+
+            <li>
+                As solicitações e respostas eram unidimensionais e não incluíam cabeçalhos.
+            </li>
+        </ul>
+    </p>
+
+    <p>
+        <h2>
+            2. HTTP/1.0
+        </h2>
+
+        <h3>
+            Lançamento: 1996
+        </h3>
+
+        <h3>
+            Características:
+        </h3>
+
+        <ul>
+            <li>
+                ntroduziu o conceito de cabeçalhos de requisição e resposta, permitindo a troca de metadados 
+                (como tipo de conteúdo e informações de cache).
+            </li>
+
+            <li>
+                Adicionou suporte a métodos de solicitação como POST e HEAD.
+            </li>
+
+            <li>
+                Cada solicitação HTTP precisava de uma nova conexão TCP, o que poderia ser ineficiente.
+            </li>
+        </ul>
+    </p>
+
+    <p>
+        <h2>
+            3. HTTP/1.1
+        </h2>
+
+        <h3>
+            Lançamento: 1999
+        </h3>
+
+        <h3>
+            Características:
+        </h3>
+
+        <ul>
+            <li>
+                Melhorou o HTTP/1.0 com várias otimizações e novos recursos.
+            </li>
+
+            <li>
+                Introduziu conexões persistentes, permitindo múltiplas solicitações e respostas através de uma única conexão TCP.
+            </li>
+
+            <li>
+                Suporte para compressão de cabeçalhos (gzip).
+            </li>
+
+            <li>
+                Adicionou métodos de solicitação adicionais como PUT, DELETE e OPTIONS.
+            </li>
+
+            <li>
+                Melhorias em cache e gerenciamento de conexões.
+            </li>
+
+            <li>
+                Introduziu o conceito de "chunked transfer encoding" para enviar dados em partes.
+            </li>
+        </ul>
+    </p>
+
+    <p>
+        <h2>
+            4. HTTP/2
+        </h2>
+
+        <h3>
+            Lançamento: 2015
+        </h3>
+
+        <h3>
+            Características:
+        </h3>
+
+        <ul>
+            <li>
+                Baseado no protocolo SPDY desenvolvido pelo Google.
+            </li>
+
+            <li>
+                Introduziu multiplexação, permitindo que múltiplas solicitações e respostas sejam enviadas simultaneamente sobre uma 
+                única conexão TCP.
+            </li>
+
+            <li>
+                Suporte para compressão de cabeçalhos usando HPACK.
+            </li>
+
+            <li>
+                Melhorias na performance com a eliminação da necessidade de várias conexões TCP.
+            </li>
+
+            <li>
+                Introduziu a ideia de "streams" para gerenciar múltiplas requisições e respostas em paralelo.
+            </li>
+        </ul>
+    </p>
+
+    <p>
+        <h2>
+            5. HTTP/3
+        </h2>
+
+        <h3>
+            Lançamento: 2022
+        </h3>
+
+        <h3>
+            Características:
+        </h3>
+
+        <ul>
+            <li>
+                Baseado no protocolo QUIC, que foi desenvolvido pelo Google para melhorar a latência e a segurança.
+            </li>
+
+            <li>
+                Utiliza UDP em vez de TCP para comunicação, o que permite a multiplexação de conexões sem bloqueio por cabeçalho 
+                (head-of-line blocking).
+            </li>
+
+            <li>
+                Melhor desempenho em redes com alta latência e perda de pacotes.
+            </li>
+
+            <li>
+                Continua suportando funcionalidades introduzidas no HTTP/2, como multiplexação e compressão de cabeçalhos.
+            </li>
+        </ul>
+    </p>
+
+    <h1>
+        Variações Adicionais
+    </h1>
+
+    <p>
+        Além das versões principais, há algumas variações e extensões do HTTP que adicionam funcionalidades específicas:
+        <ul>
+            <li>
+                HTTPS (Hypertext Transfer Protocol Secure): Uma versão do HTTP que utiliza criptografia TLS (ou SSL) para garantir a 
+                segurança e a privacidade dos dados transmitidos. O HTTPS é amplamente utilizado para proteger transações e dados sensíveis na web.
+            </li>
+
+            <li>
+                WebSocket: Protocólo que permite comunicação bidirecional e persistente entre cliente e servidor sobre uma única conexão TCP. 
+                É frequentemente usado para aplicações em tempo real, como chats e jogos online.
+            </li>
+
+            <li>
+                HTTP/2+ Extensions: Várias extensões e melhorias adicionais são aplicadas sobre o HTTP/2, como a implementação de novos 
+                mecanismos de cache e a integração com serviços de rede.
+            </li>
+        </ul>
+    </p>
+
+    <h1>
+        Em Resumo:
+    </h1>
+
+    <p>
+        <ul>
+            <li>
+                HTTP é o protocolo para comunicação entre navegadores e servidores web.
+            </li>
+            <li>
+                Funciona através de solicitações e respostas entre cliente e servidor.
+            </li>
+            <li>
+                Foi criado nos anos 90 por Tim Berners-Lee e evoluiu para incluir melhorias contínuas.
+            </li>
+            <li>
+                HTTPS adiciona uma camada de segurança com criptografia para proteger os dados transmitidos.
+            </li>
+        </ul>
+    </p>
+
+</body>
+</html>
