@@ -12,11 +12,11 @@ Criar um site usando ao menos HTML e CSS com no mínimo 17 páginas a partir dos
 - Cada um dos assuntos discutidos precisa ser rico em informações, não basta apenas responder diretamente perguntas como o que é http, nesse caso por exemplo explica-se o que é o http, qual sua função, por que é utilizado, quais são suas variações por exemplo.
 - Essa dinâmica deve ser utilizada para todos os itens listados abaixo:
 
-01 - WWW
-02 - FTP
+01 - WWW ***
+02 - FTP 
 03 - FTPS
-04 - HTTP
-05 - HTTPS
+04 - HTTP ***
+05 - HTTPS ***
 06 - IIS
 07 - PHP
 08 - WEBSERVER
