@@ -11,9 +11,7 @@
     </h1>
 
     <p>
-        FTP (File Transfer Protocol) é um protocolo de rede padrão usado para a transferência de arquivos entre um cliente e um servidor em uma 
-        rede TCP/IP, como a internet. Ele permite que arquivos sejam enviados e recebidos de forma eficiente e é amplamente utilizado para 
-        gerenciar e compartilhar arquivos.
+        FTPS (FTP Secure ou FTP-SSL) é uma extensão do protocolo FTP que adiciona suporte para criptografia usando o SSL (Secure Sockets Layer) ou o seu sucessor, o TLS (Transport Layer Security). O objetivo do FTPS é proteger a transmissão de dados e as informações de autenticação contra interceptação e ataques.
     </p>
 
     <h1>
@@ -21,23 +19,18 @@
     </h1>
 
     <p>
-        <h2>FTP é utilizado para:</h2>
+        <h2>FTPS serve para:</h2>
         <ul>
             <li>
-                Transferência de Arquivos: Enviar ou receber arquivos entre computadores ou servidores através da internet ou de uma rede local.
+                Segurança de Dados: Protege a transferência de arquivos através de criptografia, o que é especialmente importante para informações sensíveis.
             </li>
 
             <li>
-                Gerenciamento de Arquivos: Permite o gerenciamento de arquivos e diretórios em um servidor remoto, incluindo operações como criar,
-                 deletar e renomear arquivos e pastas.
+                Autenticação Segura: Garante que as credenciais (nome de usuário e senha) sejam transmitidas de forma segura.
             </li>
 
             <li>
-                Backup e Recuperação: Facilita a realização de backups e a recuperação de dados ao transferir arquivos entre sistemas.
-            </li>
-
-            <li>
-                EPublicação de Websites: É comum usar FTP para fazer upload de arquivos de um site para um servidor web.
+                Conformidade: Atende a requisitos de segurança e conformidade que exigem criptografia para a transferência de dados.
             </li>
         </ul>
     </p>
@@ -47,75 +40,38 @@
     </h1>
 
     <p>
-        FTP utiliza duas conexões distintas para transferir dados: uma para comandos e outra para a transferência real de arquivos.
-
-        <h2>
-            Conexão de Controle:
-        </h2>
 
         <ul>
             <li>
-                Porta: Normalmente utiliza a porta 21.
+                Estabelecimento de Conexão: O cliente FTPS se conecta ao servidor FTPS da mesma forma que o FTP tradicional, mas utilizando o SSL/TLS para estabelecer uma conexão segura.
             </li>
 
             <li>
-                Função: Envia comandos e respostas entre o cliente e o servidor.
+                Negociação de Segurança: O cliente e o servidor negociam as opções de segurança, como os protocolos SSL ou TLS e os métodos de criptografia que serão usados.
             </li>
         </ul>
-
-        <h2>
-            Conexão de Dados:
-        </h2>
 
         <ul>
             <li>
-                Porta: Utiliza uma porta separada, que pode ser a porta 20 no modo ativo ou uma porta dinâmica no modo passivo.
+                Autenticação: Durante o processo de autenticação, as credenciais são criptografadas, tornando a captura de informações confidenciais muito mais difícil.
             </li>
 
             <li>
-                Função: Transferência real dos dados dos arquivos.
+                Transmissão de Dados: Tanto a conexão de controle (para comandos e respostas) quanto a conexão de dados (para a transferência real dos arquivos) são protegidas pela criptografia. Dependendo da configuração, o FTPS pode usar criptografia explícita (onde a conexão começa não criptografada e é depois convertida para segura) ou implícita (onde a conexão é estabelecida diretamente com criptografia).
             </li>
         </ul>
 
-        <h2>
-            Modos de Conexão
-        </h2>
-        
-        <h2>
-            Modo Ativo:
-        </h2>
-
-        <ul>
-            <li>
-                O cliente se conecta ao servidor na porta 21 para enviar comandos.
-            </li>
-
-            <li>
-                O servidor então abre uma conexão de dados na porta 20 para enviar ou receber arquivos.
-            </li>
-        </ul>
-
-        <h2>
-            Modo Passivo:
-        </h2>
-
-        <ul>
-            <li>
-                O cliente se conecta ao servidor na porta 21 para enviar comandos.
-            </li>
-
-            <li>
-                O servidor abre uma porta aleatória para a transferência de dados, e o cliente se conecta a essa porta.
-            </li>
-        </ul>
-        
-    </p>
 
     <p>
         <h2>
-            Comandos FTP Comuns
+            Tipos de FTPS:
         </h2>
 
+        <br>
+
+        <h2>
+            FTPS Explícito:
+        </h2>
         <ul>
             <li>
                 USER e PASS: Autenticação do usuário.
@@ -254,22 +210,7 @@
         </ul>
     </p>
 
-        Em Resumo:
-    </h1>
 
-    <p>
-        <ul>
-            <li>
-                WWW é a vasta rede de documentos e recursos interconectados acessíveis através da internet.
-            </li>
-            <li>
-                Funciona com a criação e visualização de páginas web usando protocolos como HTTP e tecnologias como HTML, CSS e JavaScript.
-            </li>
-            <li>
-                Foi criado por Tim Berners-Lee e evoluiu através de várias fases, com o desenvolvimento contínuo de padrões e tecnologias.
-            </li>
-        </ul>
-    </p>
 
 </body>
 </html>

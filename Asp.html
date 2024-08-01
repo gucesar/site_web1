@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASP (Active Server Pages)</title>
+</head>
+<body>
+    <header>
+        <h1>ASP (Active Server Pages)</h1>
+    </header>
+
+    <div>
+        <h1>O que é ASP?</h1>
+        <p>
+            ASP (Active Server Pages) é uma tecnologia da Microsoft para criar páginas web dinâmicas e interativas. Foi introduzida em 1996 como parte do Microsoft Internet Information Services (IIS). ASP permite que o código seja executado no servidor, gerando HTML dinâmico que é enviado ao navegador do cliente.
+        </p>
+
+        <h1>Para que Serve?</h1>
+        <p>
+            <h2>ASP serve para:</h2>
+            <ul>
+                <li><strong>Geração de Conteúdo Dinâmico:</strong> Permite a criação de páginas web dinâmicas que podem gerar conteúdo com base em entradas do usuário, consultas a banco de dados, ou outras fontes de dados.</li>
+                <li><strong>Integração com Bancos de Dados:</strong> Facilita a conexão e a manipulação de bancos de dados, permitindo a recuperação e a atualização de informações armazenadas.</li>
+                <li><strong>Criação de Aplicações Web:</strong> Utilizado para desenvolver aplicações web completas que requerem interação com o servidor, como sistemas de gerenciamento de conteúdo e e-commerce.</li>
+                <li><strong>Manipulação de Dados do Usuário:</strong> Permite a coleta e processamento de dados enviados pelos usuários através de formulários e outras interações.</li>
+            </ul>
+        </p>
+
+        <h1>Como Funciona?</h1>
+        <p>
+            <ul>
+                <li><strong>Processamento no Servidor:</strong> O código ASP é processado no servidor web antes de ser enviado ao navegador. O servidor executa o código, gera o HTML dinâmico e o envia ao cliente.</li>
+                <li><strong>Instruções ASP:</strong> O código ASP é escrito dentro de blocos especiais no arquivo .asp. Esses blocos são delimitados por `<%` e `%>`, onde o código é executado no servidor.</li>
+                <li><strong>Integração com HTML:</strong> ASP pode ser misturado com HTML, permitindo a geração de conteúdo dinâmico dentro das tags HTML. Isso facilita a inclusão de dados gerados dinamicamente na estrutura da página.</li>
+                <li><strong>Conexão com Bancos de Dados:</strong> ASP pode utilizar ADO (ActiveX Data Objects) ou outras tecnologias para se conectar a bancos de dados, executar consultas SQL e manipular dados.</li>
+            </ul>
+        </p>
+
+        <h1>Exemplo de Código ASP</h1>
+        <p>
+            <h2>Exemplo Simples:</h2>
+            <pre>
+<code>
+&lt;% 
+    Dim nome
+    nome = "Mundo"
+%&gt;
+
+&lt;html&gt;
+&lt;body&gt;
+    &lt;h1&gt;Olá, &lt;%= nome %&gt;!&lt;/h1&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code>
+            </pre>
+            <p>Este código define uma variável <code>nome</code> no código ASP e a exibe na página HTML gerada.</p>
+        </p>
+        <p>
+            <h2>Exemplo com Banco de Dados:</h2>
+            <pre>
+<code>
+&lt;% 
+    Dim conn, rs, sql
+    Set conn = Server.CreateObject("ADODB.Connection")
+    conn.Open "DSN=nomeDoDSN;UID=usuario;PWD=senha;"
+    
+    sql = "SELECT * FROM tabela"
+    Set rs = conn.Execute(sql)
+    
+    Response.Write "&lt;table&gt;"
+    Do While Not rs.EOF
+        Response.Write "&lt;tr&gt;&lt;td&gt;" & rs("campo1") & "&lt;/td&gt;&lt;td&gt;" & rs("campo2") & "&lt;/td&gt;&lt;/tr&gt;"
+        rs.MoveNext
+    Loop
+    Response.Write "&lt;/table&gt;"
+    
+    rs.Close
+    conn.Close
+    Set rs = Nothing
+    Set conn = Nothing
+%&gt;
+</code>
+            </pre>
+            <p>Este código se conecta a um banco de dados, executa uma consulta SQL e exibe os resultados em uma tabela HTML.</p>
+        </p>
+
+        <h1>Principais Conceitos de ASP</h1>
+        <p>
+            <h2>Alguns conceitos importantes incluem:</h2>
+            <ul>
+                <li><strong>Objetos ASP:</strong> ASP utiliza objetos incorporados como `Request`, `Response`, `Session` e `Server` para gerenciar informações e controlar o fluxo de dados.</li>
+                <li><strong>Variáveis e Tipos de Dados:</strong> ASP suporta variáveis que podem armazenar diferentes tipos de dados, incluindo strings, números e objetos.</li>
+                <li><strong>Incluindo Código e Arquivos:</strong> ASP permite a inclusão de arquivos externos e reutilização de código com a diretiva `Include`.</li>
+                <li><strong>Tratamento de Erros:</strong> O tratamento de erros em ASP pode ser feito com a instrução `On Error Resume Next` para capturar e gerenciar erros de forma controlada.</li>
+            </ul>
+        </p>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Explicação sobre ASP</p>
+    </footer>
+</body>
+</html>
