@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IPv4</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
@@ -13,22 +15,62 @@
     <div>
         <h1>O que é o IPv4?</h1>
         <p>
-            O IPv4, ou Protocolo de Internet versão 4, é uma versão do protocolo IP (Protocolo de Internet) utilizado para endereçamento e roteamento de pacotes em redes. Desenvolvido na década de 1980, o IPv4 é a versão mais amplamente utilizada do protocolo IP, apesar de estar sendo gradualmente substituído pelo IPv6 devido ao esgotamento dos endereços disponíveis.
+            O IPv4, ou Protocolo de Internet versão 4, é a quarta versão do protocolo IP (Protocolo de Internet) e um dos principais protocolos utilizados para comunicação na Internet. Ele foi desenvolvido nos anos 1980 e é a versão mais amplamente implementada do IP, responsável por rotear a maior parte do tráfego de Internet até hoje.
         </p>
 
         <h1>Para que Serve?</h1>
-        <p>
+
             <h2>O IPv4 serve para:</h2>
             <ul>
-                <li>**Endereçamento:** Fornece um esquema de endereçamento único para identificar dispositivos em uma rede.</li>
-                <li>**Roteamento de Pacotes:** Permite o roteamento de pacotes de dados entre dispositivos em redes locais e na Internet.</li>
-                <li>**Comunicação de Dados:** Facilita a comunicação de dados entre computadores e outros dispositivos em uma rede.</li>
-                <li>**Identificação de Dispositivos:** Cada dispositivo em uma rede é atribuído um endereço IPv4 único, permitindo que se comunique com outros dispositivos.</li>
+                <li><strong>Endereçamento:</strong> Oferece endereços únicos a dispositivos conectados à rede, permitindo que eles se comuniquem entre si.</li>
+                <li><strong>Roteamento:</strong> Garante que os pacotes de dados sejam enviados corretamente de uma origem para um destino através da rede.</li>
+                <li><strong>Fragmentação de Pacotes:</strong> Divide grandes pacotes de dados em pedaços menores para facilitar a transmissão e a reassemblagem no destino.</li>
             </ul>
-        </p>
+
 
         <h1>Como Funciona?</h1>
-        <p>
+
             <ul>
-                <li>**Endereçamento IPv4:** O IPv4 utiliza endereços de 32 bits, que são representados em formato decimal separado por pontos (por exemplo, 192.168.1.1). Esses endereços são divididos em quatro octetos, cada um representado por um número de 0 a 255.</li>
-                <li>**Pacotes de Dados:** Os dados são divididos em pacotes que contêm o endereço IP de origem e destino. Cada pacote é
+                <li><strong>Endereçamento IPv4:</strong> O IPv4 utiliza endereços de 32 bits, representados em formato decimal separado por pontos (por exemplo, 192.168.0.1). Esses endereços são limitados a aproximadamente 4,3 bilhões de endereços únicos.</li>
+                <li><strong>Pacotes de Dados:</strong> Os dados são divididos em pacotes que contêm um cabeçalho com informações de controle e o próprio dado. O cabeçalho IPv4 inclui o endereço de origem, o endereço de destino e outras informações necessárias para o roteamento.</li>
+                <li><strong>Roteamento:</strong> Utiliza tabelas de roteamento e algoritmos para determinar o caminho mais eficiente para enviar os pacotes até o destino.</li>
+            </ul>
+
+
+        <h1>Estrutura do Endereço IPv4</h1>
+
+            <h2>A estrutura de um endereço IPv4 é composta por:</h2>
+            <ul>
+                <li><strong>Endereço Público:</strong> Usado na Internet, é único e globalmente roteável.</li>
+                <li><strong>Endereço Privado:</strong> Utilizado em redes locais, não é roteável na Internet e inclui intervalos específicos como 192.168.x.x e 10.x.x.x.</li>
+                <li><strong>Endereço de Loopback:</strong> O endereço 127.0.0.1 é usado para testes e diagnósticos locais no próprio dispositivo.</li>
+            </ul>
+            <p>Por exemplo, o endereço 192.168.1.1 é um endereço IPv4 privado comum em redes domésticas.</p>
+
+
+        <h1>Problemas e Desafios</h1>
+
+            <h2>Alguns desafios do IPv4 incluem:</h2>
+            <ul>
+                <li><strong>Escassez de Endereços:</strong> Com o crescimento exponencial da Internet, o espaço de endereçamento IPv4 está se esgotando, limitando a disponibilidade de novos endereços.</li>
+                <li><strong>Segurança:</strong> O IPv4 foi desenvolvido sem muitos recursos de segurança, necessitando de protocolos adicionais como o IPsec para segurança.</li>
+                <li><strong>Complexidade de Gerenciamento:</strong> A necessidade de NAT (Network Address Translation) para contornar a escassez de endereços adiciona complexidade ao gerenciamento de redes.</li>
+            </ul>
+
+
+        <h1>Transição para IPv6</h1>
+
+            <h2>Processo de Transição:</h2>
+            <ul>
+                <li><strong>Coexistência:</strong> IPv4 e IPv6 são usados simultaneamente durante a transição. Técnicas como NAT64 e DNS64 ajudam na comunicação entre redes IPv4 e IPv6.</li>
+                <li><strong>Transição Gradual:</strong> A transição é um processo gradual que envolve a atualização de equipamentos, software e configuração de redes.</li>
+                <li><strong>Benefícios a Longo Prazo:</strong> A adoção do IPv6 proporciona benefícios significativos em termos de escalabilidade e eficiência para a Internet e redes futuras.</li>
+            </ul>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Explicação sobre IPv4</p>
+    </footer>
+</body>
+</html>

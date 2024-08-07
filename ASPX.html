@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ASPX (Active Server Pages Extended)</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
@@ -17,7 +19,7 @@
         </p>
 
         <h1>Para que Serve?</h1>
-        <p>
+  
             <h2>O ASPX serve para:</h2>
             <ul>
                 <li>**Desenvolvimento de Aplicações Web:** Facilita a criação de aplicações web complexas, com suporte a eventos, controles e componentes.</li>
@@ -25,23 +27,22 @@
                 <li>**Integração com Banco de Dados:** Facilita a conexão e manipulação de dados em bancos de dados através de ADO.NET e Entity Framework.</li>
                 <li>**Suporte a Controle de Estado:** Permite manter o estado de informações entre requisições, utilizando ViewState e Session.</li>
             </ul>
-        </p>
+
 
         <h1>Como Funciona?</h1>
-        <p>
+
             <ul>
                 <li>**Modelo de Página:** Uma página ASPX é composta por um arquivo de interface (ASPX) e um arquivo de código-behind (C# ou VB.NET) que contém a lógica da aplicação.</li>
                 <li>**Ciclo de Vida da Página:** O ASP.NET possui um ciclo de vida de página bem definido, que inclui etapas como inicialização, carregamento, manipulação de eventos e renderização.</li>
                 <li>**Controles de Servidor:** ASPX utiliza controles de servidor que permitem a criação de elementos dinâmicos, como botões, grids e formulários, que podem ser manipulados no código.</li>
                 <li>**Tratamento de Eventos:** O código pode reagir a eventos como cliques de botão e mudanças em campos de entrada, permitindo interatividade nas páginas.</li>
             </ul>
-        </p>
+
 
         <h1>Exemplo de Código ASPX</h1>
-        <p>
             <h2>Exemplo Simples de ASPX:</h2>
             <pre>
-<code>
+<p>
 &lt;%@ Page Language="C#" AutoEventWireup="true" CodeFile="Exemplo.aspx.cs" Inherits="Exemplo"&gt;
 &lt;html&gt;
 &lt;head&gt;&lt;title&gt;Exemplo de ASPX&lt;/title&gt;&lt;/head&gt;
@@ -55,13 +56,11 @@
     &lt;/form&gt;
 &lt;/body&gt;
 &lt;/html&gt;
-</code>
+</p>>
             </pre>
-        </p>
-        <p>
             <h2>Código-behind (Exemplo.aspx.cs):</h2>
             <pre>
-<code>
+<p>
 using System;
 
 public partial class Exemplo : System.Web.UI.Page
@@ -71,12 +70,10 @@ public partial class Exemplo : System.Web.UI.Page
         lblNome.Text = txtNome.Text;
     }
 }
-</code>
+</p>
             </pre>
-        </p>
-
         <h1>Principais Conceitos do ASPX</h1>
-        <p>
+
             <h2>Alguns conceitos importantes incluem:</h2>
             <ul>
                 <li>**Modelo de Eventos:** O ASP.NET utiliza um modelo baseado em eventos, onde os controles de servidor geram eventos que podem ser manipulados no código-behind.</li>
@@ -84,7 +81,7 @@ public partial class Exemplo : System.Web.UI.Page
                 <li>**Master Pages:** Permitem a criação de layouts consistentes em toda a aplicação, onde uma página mestre define a estrutura comum e páginas filhas herdam esse layout.</li>
                 <li>**Web Forms:** ASPX é usado principalmente com Web Forms, um modelo de programação que facilita o desenvolvimento de interfaces de usuário ricas.</li>
             </ul>
-        </p>
+
     </div>
 
     <footer>

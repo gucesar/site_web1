@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apache Tomcat</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
@@ -17,7 +19,7 @@
         </p>
 
         <h1>Para que Serve?</h1>
-        <p>
+
             <h2>O Apache Tomcat serve para:</h2>
             <ul>
                 <li><strong>Execução de Aplicações Web Java:</strong> Permite a execução de aplicações web desenvolvidas em Java, usando as especificações Java Servlet e JSP.</li>
@@ -25,23 +27,23 @@
                 <li><strong>Suporte a Tecnologias Java:</strong> Oferece suporte para outras tecnologias Java relacionadas à web, como Java Expression Language (EL) e JavaServer Faces (JSF), quando configurado.</li>
                 <li><strong>Desenvolvimento e Teste de Aplicações:</strong> Utilizado durante o desenvolvimento e teste de aplicações web Java devido à sua facilidade de configuração e execução local.</li>
             </ul>
-        </p>
+
 
         <h1>Como Funciona?</h1>
-        <p>
+
             <ul>
                 <li><strong>Instalação:</strong> O Tomcat é instalado como um servidor web e servlet container. Ele pode ser configurado em um servidor local ou em um servidor de produção.</li>
                 <li><strong>Deploy de Aplicações:</strong> As aplicações web são empacotadas em arquivos WAR (Web Application Archive) e implantadas no Tomcat. O Tomcat descompacta e configura esses arquivos para execução.</li>
                 <li><strong>Processamento de Requisições:</strong> Quando uma requisição HTTP é recebida, o Tomcat a direciona para o servlet apropriado, que processa a solicitação e gera uma resposta. As páginas JSP também são processadas pelo Tomcat, que as compila em servlets.</li>
                 <li><strong>Configuração:</strong> O Tomcat é configurado através de arquivos XML, como `server.xml`, `web.xml`, e `context.xml`, que definem parâmetros do servidor, aplicações e contextos.</li>
             </ul>
-        </p>
+
 
         <h1>Exemplo de Configuração do Tomcat</h1>
-        <p>
+
             <h2>Configuração Básica:</h2>
             <pre>
-<code>
+<p>
 # Arquivo server.xml
 
 &lt;Server port="8005" shutdown="SHUTDOWN"&gt;
@@ -57,21 +59,20 @@
         &lt;/Engine&gt;
     &lt;/Service&gt;
 &lt;/Server&gt;
-</code>
-            </pre>
+</p>
+
             <p>Este exemplo mostra uma configuração básica do Tomcat onde o servidor escuta na porta 8080 para requisições HTTP e na porta 8005 para comandos de desligamento.</p>
-        </p>
 
         <h1>Principais Conceitos do Tomcat</h1>
-        <p>
+
             <h2>Alguns conceitos importantes incluem:</h2>
             <ul>
-                <li><strong>Servlets:</strong> São classes Java que processam requisições e respostas HTTP. O Tomcat gerencia a criação, execução e destruição de servlets.</li>
-                <li><strong>JSP (JavaServer Pages):</strong> Páginas que combinam HTML com código Java para gerar conteúdo dinâmico. O Tomcat compila páginas JSP em servlets.</li>
-                <li><strong>Contextos e Aplicações Web:</strong> O Tomcat pode gerenciar múltiplas aplicações web, cada uma em seu próprio contexto. Contextos são definidos no arquivo <code>context.xml</code>.</li>
-                <li><strong>Configuração de Conectores:</strong> Tomcat usa conectores para gerenciar diferentes protocolos, como HTTP e AJP (Apache JServ Protocol), permitindo a integração com servidores web como Apache HTTP Server.</li>
+                <li>Servlets: São classes Java que processam requisições e respostas HTTP. O Tomcat gerencia a criação, execução e destruição de servlets.</li>
+                <li>JSP (JavaServer Pages): Páginas que combinam HTML com código Java para gerar conteúdo dinâmico. O Tomcat compila páginas JSP em servlets.</li>
+                <li>Contextos e Aplicações Web: O Tomcat pode gerenciar múltiplas aplicações web, cada uma em seu próprio contexto. Contextos são definidos no arquivo "context.xml".</li>
+                <li>Configuração de Conectores: Tomcat usa conectores para gerenciar diferentes protocolos, como HTTP e AJP (Apache JServ Protocol), permitindo a integração com servidores web como Apache HTTP Server.</li>
             </ul>
-        </p>
+
     </div>
 
     <footer>

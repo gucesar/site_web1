@@ -3,61 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Servidor Web</title>
+    <title>Servidores Web</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Servidor Web</h1>
+        <h1>Servidores Web</h1>
     </header>
 
     <div>
-        <h1>O que é um Servidor Web?</h1>
+        <h1>O que são Servidores Web?</h1>
         <p>
-            Um servidor web é um software ou hardware que serve a finalidade de entregar conteúdos da web, como páginas HTML, imagens, e outros arquivos, para os navegadores dos usuários. Ele processa as requisições HTTP feitas pelos navegadores e retorna as respostas apropriadas, que podem incluir páginas web estáticas ou dinâmicas.
+            Um servidor web é um software que permite a hospedagem e entrega de páginas web para os navegadores dos usuários finais. Ele funciona recebendo solicitações HTTP (Hypertext Transfer Protocol) dos clientes (como navegadores web) e respondendo com páginas HTML, imagens, arquivos, ou outros conteúdos requisitados.
         </p>
 
-        <h1>Para que Serve?</h1>
-        <p>
-            <h2>Um servidor web serve para:</h2>
+        <h1>Para que Servem?</h1>
+        <p>            <h2>Os servidores web servem para:</h2>
             <ul>
-                <li>**Hospedagem de Sites:** Armazena e disponibiliza sites e aplicações web para acesso através da internet ou de redes internas.</li>
-                <li>**Processamento de Requisições:** Recebe e processa requisições HTTP/HTTPS de navegadores e outras aplicações cliente.</li>
-                <li>**Distribuição de Conteúdo:** Entrega conteúdo estático (como arquivos HTML e imagens) e dinâmico (gerado por linguagens de script como PHP, ASP.NET, etc.) aos usuários.</li>
-                <li>**Segurança:** Implementa mecanismos de segurança como criptografia SSL/TLS, autenticação e controle de acesso para proteger dados e comunicações.</li>
-                <li>**Gerenciamento de Tráfego:** Balanceia e gerencia o tráfego de entrada para garantir a disponibilidade e o desempenho dos sites.</li>
+                <li><strong>Hospedagem de Sites:</strong> Permitem que empresas, organizações e indivíduos publiquem seus sites na Internet, tornando-os acessíveis ao público.</li>
+                <li><strong>Processamento de Solicitações:</strong> Recebem e processam solicitações de páginas web, arquivos e outros recursos enviados pelos clientes.</li>
+                <li><strong>Gerenciamento de Recursos:</strong> Controlam o acesso aos arquivos e recursos hospedados, garantindo segurança e eficiência na entrega de conteúdo.</li>
+                <li><strong>Execução de Aplicações Web:</strong> Suportam a execução de scripts e linguagens de programação (como PHP, Python, Node.js) para criar páginas dinâmicas e interativas.</li>
             </ul>
-        </p>
 
-        <h1>Como Funciona?</h1>
-        <p>
+
+        <h1>Como Funcionam?</h1>
+
             <ul>
-                <li>**Recepção de Requisições:** O servidor web recebe requisições HTTP/HTTPS de clientes (navegadores) através da rede.</li>
-                <li>**Processamento:** O servidor interpreta a requisição e determina qual recurso deve ser retornado, que pode incluir processamento adicional, como execução de scripts ou consultas a bancos de dados.</li>
-                <li>**Resposta:** O servidor envia de volta uma resposta HTTP/HTTPS, que inclui o conteúdo solicitado (página HTML, imagem, etc.) e, se necessário, informações adicionais como cabeçalhos HTTP.</li>
-                <li>**Log e Monitoramento:** O servidor web pode registrar atividades e monitorar o tráfego para fins de análise e depuração.</li>
+                <li><strong>Recebimento de Solicitações:</strong> Quando um cliente (navegador web) solicita uma página ou recurso, o servidor web recebe essa solicitação através do protocolo HTTP.</li>
+                <li><strong>Processamento e Entrega:</strong> O servidor web localiza o recurso solicitado, processa-o (se necessário, executando scripts ou consultando bancos de dados), e entrega a resposta ao cliente.</li>
+                <li><strong>Comunicação:</strong> Utiliza protocolos como HTTP, HTTPS (HTTP seguro com SSL/TLS), FTP (File Transfer Protocol) e outros para comunicação segura e eficiente.</li>
             </ul>
-        </p>
 
-        <h1>Tipos de Servidores Web</h1>
-        <p>
-            <h2>Principais Tipos de Servidores Web:</h2>
+
+        <h1>Principais Servidores Web</h1>
+
+            Alguns dos servidores web mais populares incluem:
             <ul>
-                <li>**Apache HTTP Server:** Um dos servidores web mais populares e amplamente utilizados, conhecido por sua flexibilidade e extensibilidade.</li>
-                <li>**Nginx:** Conhecido por sua alta performance e eficiência em lidar com grandes volumes de tráfego e conexões simultâneas.</li>
-                <li>**Microsoft Internet Information Services (IIS):** Servidor web desenvolvido pela Microsoft, integrado com o sistema operacional Windows Server e frequentemente usado em ambientes corporativos.</li>
-                <li>**LiteSpeed:** Um servidor web que foca em desempenho e segurança, frequentemente usado para sites que necessitam de alta disponibilidade e velocidade.</li>
+                <li><strong>Apache:</strong> Um dos servidores web mais antigos e amplamente usados no mundo, conhecido por sua flexibilidade e suporte a módulos.</li>
+                <li><strong>NGINX:</strong> Conhecido por sua alta performance e eficiência no tratamento de grandes volumes de tráfego web.</li>
+                <li><strong>Microsoft IIS (Internet Information Services):</strong> Servidor web desenvolvido pela Microsoft para uso em sistemas Windows Server, integrado com tecnologias Microsoft como ASP.NET.</li>
+                <li><strong>Lighttpd:</strong> Conhecido por sua velocidade e eficiência, especialmente adequado para servir conteúdo estático.</li>
             </ul>
-        </p>
 
-        <h1>Como Foi Feito?</h1>
-        <h2>Desenvolvimento Inicial:</h2>
-        <ul>
-            <li>O conceito de servidor web surgiu com o desenvolvimento da World Wide Web, criada por Tim Berners-Lee no final da década de 1980 e início dos anos 1990.</li>
-            <li>Os primeiros servidores web foram implementados para servir páginas HTML e gerenciar requisições HTTP, permitindo a comunicação entre clientes e servidores.</li>
-        </ul>
 
-        <h2>Evolução:</h2>
-        <ul>
-            <li>**Início dos Anos 90:** A introdução dos primeiros servidores web, como o CERN httpd e o NCSA HTTPd, que permitiram a disseminação inicial da web.</li>
-            <li>**Final dos Anos 90:** O surgimento do Apache HTTP Server, que rapidamente se tornou um dos servidores web mais utilizados devido à sua flexibilidade e código aberto.</li>
-            <li>**Anos 2000 e Além:** A evolução dos s
+        <h1>Segurança e Manutenção</h1>
+
+            <h2>Segurança:</h2>
+            <ul>
+                <li><strong>Atualizações:</strong> Manter o servidor web atualizado com as últimas correções de segurança é crucial para proteger contra vulnerabilidades conhecidas.</li>
+                <li><strong>Configuração Segura:</strong> Implementar configurações de segurança adequadas, como firewalls, SSL/TLS para criptografia, e controle de acesso.</li>
+            </ul>
+            <h2>Manutenção:</h2>
+            <ul>
+                <li><strong>Monitoramento:</strong> Monitorar o desempenho do servidor web para identificar problemas de desempenho e disponibilidade.</li>
+                <li><strong>Backup:</strong> Realizar backups regulares dos dados do servidor para recuperação em caso de falhas ou incidentes.</li>
+            </ul>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Explicação sobre Servidores Web</p>
+    </footer>
+</body>
+</html>

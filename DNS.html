@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DNS (Domain Name System)</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
@@ -17,7 +19,7 @@
         </p>
 
         <h1>Para que Serve?</h1>
-        <p>
+
             <h2>O DNS serve para:</h2>
             <ul>
                 <li>**Resolução de Nomes:** Converte nomes de domínio (como www.exemplo.com) em endereços IP (como 192.0.2.1), permitindo a localização de servidores na internet.</li>
@@ -25,23 +27,22 @@
                 <li>**Distribuição de Carga:** Utiliza técnicas como DNS Round Robin para distribuir o tráfego entre múltiplos servidores, melhorando a performance e a disponibilidade.</li>
                 <li>**Segurança:** Proporciona recursos de segurança como DNSSEC (Domain Name System Security Extensions), que adiciona uma camada de autenticação às respostas DNS.</li>
             </ul>
-        </p>
+
 
         <h1>Como Funciona?</h1>
-        <p>
+
             <ul>
                 <li>**Hierarquia de Domínios:** O DNS é organizado em uma estrutura hierárquica, começando pelos domínios de nível superior (TLDs) como .com, .org, e .net.</li>
                 <li>**Servidores DNS:** Existem diferentes tipos de servidores DNS, incluindo servidores autoritativos (que armazenam os registros de um domínio) e servidores recursivos (que buscam os registros necessários para resolver uma consulta).</li>
                 <li>**Processo de Resolução:** Quando um usuário digita um nome de domínio, uma consulta é enviada a um servidor DNS recursivo, que busca a informação em cache ou realiza novas consultas até encontrar o endereço IP correspondente.</li>
                 <li>**Cache de DNS:** Para otimizar o desempenho, os resultados das consultas DNS são armazenados em cache por um período determinado, reduzindo o tempo necessário para resolver nomes de domínio repetidamente.</li>
             </ul>
-        </p>
-
+ 
         <h1>Exemplo de Configuração DNS</h1>
-        <p>
+
             <h2>Exemplo de Registro DNS:</h2>
             <pre>
-<code>
+<p>
 ; Registro A
 exemplo.com.   IN  A   192.0.2.1
 
@@ -50,12 +51,12 @@ www.exemplo.com.  IN  CNAME  exemplo.com.
 
 ; Registro MX
 exemplo.com.   IN  MX  10 mail.exemplo.com.
-</code>
+</p>
             </pre>
-        </p>
+
 
         <h1>Principais Conceitos do DNS</h1>
-        <p>
+
             <h2>Alguns conceitos importantes incluem:</h2>
             <ul>
                 <li>**Domínios:** A estrutura que organiza a hierarquia dos nomes na internet, sendo composta por subdomínios e domínios de nível superior.</li>
@@ -63,7 +64,7 @@ exemplo.com.   IN  MX  10 mail.exemplo.com.
                 <li>**TTL (Time To Live):** O tempo que um registro DNS permanece em cache antes de ser considerado obsoleto e precisar ser consultado novamente.</li>
                 <li>**DNSSEC:** Extensões de segurança que ajudam a proteger o DNS contra ataques como spoofing e cache poisoning.</li>
             </ul>
-        </p>
+
     </div>
 
     <footer>

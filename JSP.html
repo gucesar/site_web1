@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JavaServer Pages (JSP)</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
@@ -17,7 +19,7 @@
         </p>
 
         <h1>Para que Serve?</h1>
-        <p>
+
             <h2>O JSP serve para:</h2>
             <ul>
                 <li>**Geração de Conteúdo Dinâmico:** Permite a criação de páginas que podem exibir informações variadas com base na lógica de negócios e nas interações do usuário.</li>
@@ -25,23 +27,22 @@
                 <li>**Facilidade de Uso:** Proporciona uma forma mais simples de criar interfaces de usuário do que apenas programar em servlets, uma vez que permite a mistura de HTML e código Java.</li>
                 <li>**Suporte a Expressões e Tags:** Permite o uso de expressões e tags personalizadas, facilitando a reutilização de componentes e a separação de lógica de apresentação.</li>
             </ul>
-        </p>
+
 
         <h1>Como Funciona?</h1>
-        <p>
+
             <ul>
                 <li>**Compilação em Servlets:** Quando uma página JSP é requisitada, o servidor a compila em um servlet Java, que é então executado para gerar a resposta HTML.</li>
                 <li>**Directives, Declarations e Scriptlets:** O JSP permite o uso de diferentes elementos, como directives para configurar a página, declarations para definir variáveis e métodos, e scriptlets para inserir código Java diretamente no HTML.</li>
                 <li>**Manipulação de Requisições:** O JSP pode acessar dados de requisições HTTP e manipular atributos de sessão e de solicitação, permitindo a personalização do conteúdo exibido.</li>
                 <li>**Integração com Banco de Dados:** Facilita a conexão a bancos de dados e a execução de consultas SQL, permitindo que os dados sejam exibidos dinamicamente nas páginas.</li>
             </ul>
-        </p>
+
 
         <h1>Exemplo de Código JSP</h1>
-        <p>
             <h2>Exemplo Simples de JSP:</h2>
             <pre>
-<code>
+<p>
 &lt;% 
     String nome = request.getParameter("nome");
     if (nome == null) {
@@ -54,12 +55,12 @@
     &lt;h1&gt;Bem-vindo, &lt;%= nome %&gt;!&lt;/h1&gt;
 &lt;/body&gt;
 &lt;/html&gt;
-</code>
+</p>
             </pre>
-        </p>
+
 
         <h1>Principais Conceitos do JSP</h1>
-        <p>
+
             <h2>Alguns conceitos importantes incluem:</h2>
             <ul>
                 <li>**JSTL (JavaServer Pages Standard Tag Library):** Uma biblioteca de tags que simplifica a programação JSP, permitindo a manipulação de dados e a execução de operações comuns.</li>
@@ -67,7 +68,7 @@
                 <li>**Custom Tags:** É possível criar tags personalizadas para encapsular funcionalidades específicas, promovendo a reutilização de código.</li>
                 <li>**MVC (Model-View-Controller):** O JSP é frequentemente utilizado na camada de apresentação do padrão MVC, separando a lógica de negócios da apresentação do usuário.</li>
             </ul>
-        </p>
+
     </div>
 
     <footer>
